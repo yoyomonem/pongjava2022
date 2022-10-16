@@ -47,7 +47,7 @@ public class GamePanel extends JPanel implements Runnable {
 	public void draw(Graphics g) {
 		
 	}
-	public void move(Graphics g) {
+	public void move() {
 		g.setColor(Color.white);
 	}
 	public void checkCollision() {
