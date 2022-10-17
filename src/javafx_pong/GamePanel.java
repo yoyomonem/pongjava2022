@@ -45,10 +45,10 @@ public class GamePanel extends JPanel implements Runnable {
 		g.drawImage(image, 0, 0, this);
 	}
 	public void draw(Graphics g) {
-		
+		g.setColor(Color.white);
 	}
 	public void move() {
-		g.setColor(Color.white);
+		
 	}
 	public void checkCollision() {
 		
