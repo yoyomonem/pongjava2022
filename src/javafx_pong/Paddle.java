@@ -30,7 +30,7 @@ public class Paddle extends Rectangle {
 
     }
 
-    public void draw() {
+    public void draw(Graphics g) {
 
     }
 }
