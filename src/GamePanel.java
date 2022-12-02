@@ -5,9 +5,6 @@ import java.awt.event.*;
 import java.util.*;
 import javax.swing.*;
 
-import javafx_pong.*;
-
-@SuppressWarnings("unused")
 public class GamePanel extends JPanel implements Runnable {
     static final int GAME_WIDTH = 1000;
     static final int GAME_HEIGHT = (int) (GAME_WIDTH * (0.5555));
@@ -41,7 +38,7 @@ public class GamePanel extends JPanel implements Runnable {
 
     public void newPaddles() {
         paddle1 = new Paddle(0, (GAME_HEIGHT / 2) - (PADDLE_HEIGHT / 2), PADDLE_WIDTH, PADDLE_HEIGHT, 1);
-        paddle2 = new Paddle(GAME_WIDTH - PADDLE_WIDTH, (GAME_HEIGHT / 2) - (PADDLE_HEIGHT / 2), PADDLE_WIDTH, PADDLE_HEIGHT, 1);
+        paddle2 = new Paddle(GAME_WIDTH - PADDLE_WIDTH, (GAME_HEIGHT / 2) - (PADDLE_HEIGHT / 2), PADDLE_WIDTH, PADDLE_HEIGHT, 2);
     }
 
     public void paint(Graphics g) {
@@ -53,7 +50,8 @@ public class GamePanel extends JPanel implements Runnable {
     }
 
     public void draw(Graphics g) {
-
+        paddle1.draw(g);
+        paddle2.draw(g);
     }
 
     public void move() {
@@ -61,7 +59,14 @@ public class GamePanel extends JPanel implements Runnable {
     }
 
     public void checkCollision() {
-
+        if (paddle1.y <= 0)
+            paddle1.y = 0;
+        if (paddle1.y >= (GAME_HEIGHT - PADDLE_HEIGHT))
+            paddle1.y = GAME_HEIGHT - PADDLE_HEIGHT;
+        if (paddle2.y <= 0)
+            paddle1.y = 0;
+        if (paddle2.y >= (GAME_HEIGHT - PADDLE_HEIGHT))
+            paddle1.y = GAME_HEIGHT - PADDLE_HEIGHT;
     }
 
     public void run() {
@@ -76,6 +81,7 @@ public class GamePanel extends JPanel implements Runnable {
             if (delta >= 1) {
                 move();
                 checkCollision();
+                repaint();
                 delta--;
             }
         }
@@ -83,11 +89,13 @@ public class GamePanel extends JPanel implements Runnable {
 
     public class AL extends KeyAdapter {
         public void keyPressed(KeyEvent e) {
-
+            paddle1.keyPressed(e);
+            paddle2.keyPressed(e);
         }
 
         public void keyReleased(KeyEvent e) {
-
+            paddle1.keyReleased(e);
+            paddle2.keyReleased(e);
         }
     }
 }

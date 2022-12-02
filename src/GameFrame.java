@@ -5,9 +5,17 @@ import java.awt.event.*;
 import java.util.*;
 import javax.swing.*;
 
+/**
+ * The UI.
+ * @author <a href="mailto:yoyo.monem22@gmail.com">Youssef Nasr</a>
+ */
 public class GameFrame extends JFrame {
     GamePanel panel;
 
+    /**
+     * The UI.
+     * @author <a href="mailto:yoyo.monem22@gmail.com">Youssef Nasr</a>
+     */
     GameFrame() {
         panel = new GamePanel();
         this.add(panel);
