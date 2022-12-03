@@ -4,7 +4,10 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
 import javax.swing.*;
-
+/**
+ * The Pong paddle.
+ * @author <a href="mailto:yoyo.monem22@gmail.com">Youssef Nasr</a>
+ */
 public class Paddle extends Rectangle {
     int id;
     int yVelocity;
@@ -70,7 +73,7 @@ public class Paddle extends Rectangle {
     }
 
     public void move() {
-        y = y + yVelocity;
+        y += yVelocity;
     }
 
     public void draw(Graphics g) {
