@@ -1,10 +1,5 @@
 package javafx_pong;
-
 import java.awt.*;
-import java.awt.event.*;
-import java.util.*;
-import javax.swing.*;
-import javax.swing.plaf.FontUIResource;
 /**
  * The score.
  * @author <a href="mailto:yoyo.monem22@gmail.com">Youssef Nasr</a>

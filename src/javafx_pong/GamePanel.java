@@ -1,5 +1,4 @@
 package javafx_pong;
-
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;

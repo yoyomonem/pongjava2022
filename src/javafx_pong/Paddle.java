@@ -1,9 +1,6 @@
 package javafx_pong;
-
 import java.awt.*;
 import java.awt.event.*;
-import java.util.*;
-import javax.swing.*;
 /**
  * The Pong paddle.
  * @author <a href="mailto:yoyo.monem22@gmail.com">Youssef Nasr</a>
