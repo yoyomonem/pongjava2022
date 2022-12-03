@@ -1,4 +1,4 @@
-Brings Pong to Java
+_Brings Pong to Java_
 
 ## Pong written in Java with the help of JavaFX
 
