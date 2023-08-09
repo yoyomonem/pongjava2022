@@ -4,8 +4,9 @@ import java.awt.event.*;
 import java.util.*;
 import javax.swing.*;
 /**
- * The UI.
- * @author <a href="mailto:yoyo.monem22@gmail.com">Youssef Nasr</a>
+ * The Pong UI.
+ * @author <a href="mailto:youssef.land@outlook.com">Youssef Nasr</a>
+ * @since Pong 1972 (1.0)
  */
 public class GamePanel extends JPanel implements Runnable {
     static final int GAME_WIDTH = 1000;
@@ -24,7 +25,8 @@ public class GamePanel extends JPanel implements Runnable {
     Score score;
     /**
      * The UI.
-     * @author <a href="mailto:yoyo.monem22@gmail.com">Youssef Nasr</a>
+     * @author <a href="mailto:youssef.land@outlook.com">Youssef Nasr</a>
+     * @since Pong 2022 (1.1)
      */
     GamePanel() {
         newPaddles();
@@ -108,13 +110,13 @@ public class GamePanel extends JPanel implements Runnable {
             score.player2++;
             newPaddles();
             newBall();
-            System.out.println("Score for Player 2: " + score.player2);
+            // System.out.println("Score for Player 2: " + score.player2);
         }
         if (ball.x >= (GAME_WIDTH - BALL_DIAMETER)) {
             score.player1++;
             newPaddles();
             newBall();
-            System.out.println("Score for Player 1: " + score.player1);
+            // System.out.println("Score for Player 1: " + score.player1);
         }
     }
 

@@ -3,13 +3,19 @@ import java.awt.*;
 import java.awt.event.*;
 /**
  * The Pong paddle.
- * @author <a href="mailto:yoyo.monem22@gmail.com">Youssef Nasr</a>
+ * @author <a href="mailto:youssef.land@outlook.com">Youssef Nasr</a>
+ * @since Pong 1972 (1.0)
  */
 public class Paddle extends Rectangle {
     int id;
     int yVelocity;
     int speed = 10;
 
+    /**
+    * The Pong paddle.
+    * @author <a href="mailto:youssef.land@outlook.com">Youssef Nasr</a>
+    * @since Pong 1972 (1.0)
+    */
     Paddle(int x, int y, int PADDLE_WIDTH, int PADDLE_HEIGHT, int id) {
         super(x, y, PADDLE_WIDTH, PADDLE_HEIGHT);
         this.id = id;

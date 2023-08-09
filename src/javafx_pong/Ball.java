@@ -3,7 +3,8 @@ import java.awt.*;
 import java.util.*;
 /**
  * The Pong ball.
- * @author <a href="mailto:yoyo.monem22@gmail.com">Youssef Nasr</a>
+ * @author <a href="mailto:youssef.land@outlook.com">Youssef Nasr</a>
+ * @since Pong 1972 (1.0)
  */
 public class Ball extends Rectangle {
     Random random;
@@ -12,7 +13,8 @@ public class Ball extends Rectangle {
     int initialSpeed = 2;
     /**
      * The Pong ball.
-     * @author <a href="mailto:yoyo.monem22@gmail.com">Youssef Nasr</a>
+     * @author <a href="mailto:youssef.land@outlook.com">Youssef Nasr</a>
+     * @since Pong 1972 (1.0)
      */
     Ball(int x, int y, int w, int h) {
         super(x, y, w, h);

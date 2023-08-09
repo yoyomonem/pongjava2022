@@ -3,14 +3,16 @@ import java.awt.*;
 import javax.swing.*;
 /**
  * The UI.
- * @author <a href="mailto:yoyo.monem22@gmail.com">Youssef Nasr</a>
+ * @author <a href="mailto:youssef.land@outlook.com">Youssef Nasr</a>
+ * @since Pong 2022 (1.1)
  */
 public class GameFrame extends JFrame {
     GamePanel panel;
 
     /**
-     * The UI.
-     * @author <a href="mailto:yoyo.monem22@gmail.com">Youssef Nasr</a>
+     * The Pong UI.
+     * @author <a href="mailto:youssef.land@outlook.com">Youssef Nasr</a>
+     * @since Pong 2022 (1.1)
      */
     GameFrame() {
         panel = new GamePanel();
