@@ -7,4 +7,4 @@
   </picture>
 </h1>
 
-Pong 2022 is a Java recreation of the classic game Pong (the former of which started development in 2022, latter of which released in 1972). Pong 2022's development started 50 years after Pong's original release (2022).
+Pong 2022 is a Java recreation of the classic game Pong (the former of which started development in 2022, whereas the latter of which released in 1972). Pong 2022's development started 50 years after Pong's original release (Atari released Pong on 1972, whereas I started development of Pong 2022 on... well... 2022).
